@@ -18,7 +18,7 @@ const INFO = {
 	homepage: {
 		title: "Toby Fenner",
 		description:
-			"I'm a Junior studying Computer Science and Business at USC. My experience in research, software engineering, and web development has taught me how to build anything from scratch.",
+			"I'm a Junior studying Computer Science and Business at USC. My experience in research, software engineering, and web development has taught me how to build useful products from scratch.",
 	},
 
 	about: {
