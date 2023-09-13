@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+New&display=swap');
+
+
+
+/* SentenceCycler.css */
+.fixed-width-text {
+    font-family: 'Courier New', monospace;
+    white-space: pre; /* Preserve formatting and leading spaces */
+    line-height: 0.7; /* Reduce the line height to remove vertical gap */
+    letter-spacing: 1px; /* Increase letter spacing as desired */
+    box-sizing: border-box; /* Add this property */
+    width: 400px; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+    padding-top: 20px;
+  }
+  
