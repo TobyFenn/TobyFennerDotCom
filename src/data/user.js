@@ -36,7 +36,7 @@ const INFO = {
 		{
 			title: "Trojan Ridelink",
 			description:
-				"Automatically pair with other USC students to carpool from LAX based on flight data. Built with React, Firebase, Firestore, and Aviationstack",
+				"Automatically pair with other USC students to carpool from LAX based on flight data. Built with React, Firebase, Firestore, and Aviationstack.",
 			logo: "/TRL-LOGO.png",
 			linkText: "Try it out",
 			link: "https://trojanride.link/",
@@ -45,29 +45,29 @@ const INFO = {
 		{
 			title: "MainStream",
 			description:
-				"Contribute to crowdsourced, community-centric music playlists. Winner of the USC Scope '23 Hackathon",
+				"Javascript web app for contributing to crowdsourced, community-centric music playlists. Winner of the USC Scope 2023 Hackathon.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
 			linkText: "View repo",
 			link: "https://github.com/aLehav/MainStream",
 		},
 
-		// {
-		// 	title: "Project 3",
-		// 	description:
-		// 		"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-		// 	logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
-		// 	linkText: "View Project",
-		// 	link: "https://github.com",
-		// },
+		{
+			title: "Twitter Model",
+			description:
+				"C++ Twitter engine showcasing chain of responsibility, STL container utilization, and dynamic memory management.",
+			logo: "/twitterproj.png",
+			linkText: "View Project",
+			link: "https://github.com/TobyFenn/twitter-console-app",
+		},
 
-		// {
-		// 	title: "Project 4",
-		// 	description:
-		// 		"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-		// 	logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-		// 	linkText: "View Project",
-		// 	link: "https://github.com",
-		// },
+		{
+			title: "Huffman codes",
+			description:
+				"Huffman coding algorithm for lossless data compression & decompression with prioritized queue management, efficient file I/O, and error-handling.",
+			logo: "/lock.png",
+			linkText: "View Project",
+			link: "https://github.com/TobyFenn/huffman-compression-utility",
+		},
 
 		// {
 		// 	title: "Project 5",
