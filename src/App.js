@@ -8,6 +8,7 @@ import Projects from "./pages/projects";
 import Articles from "./pages/articles";
 import ReadArticle from "./pages/readArticle";
 import Contact from "./pages/contact";
+import Bonus from "./pages/bonus";
 import Notfound from "./pages/404";
 
 import { TRACKING_ID } from "./data/tracking";
@@ -29,6 +30,7 @@ function App() {
 				<Route path="/articles" element={<Articles />} />
 				<Route path="/article/:slug" element={<ReadArticle />} />
 				<Route path="/contact" element={<Contact />} />
+				<Route path="/bonus" element={<Bonus />} />
 				<Route path="*" element={<Notfound />} />
 			</Routes>
 		</div>

@@ -1,0 +1,60 @@
+/* Link styling */
+.link-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+  }
+  
+  .column {
+	margin: 0 10px; /* Adjust the gap between columns */
+  }
+  
+  .column a {
+	display: block;
+	color: black; /* Assuming plain text color is black */
+	text-decoration: none; /* Removes the underline from links */
+	margin-bottom: 10px; /* Adjust space between links in a column */
+  }
+  
+  .column a:visited {
+	color: black; /* Makes sure visited links also appear as plain black text */
+  }
+  
+  .bonus-logo-container {
+	display: flex;
+	justify-content: left;
+	padding-top: 25px;
+  }
+  
+  .bonus-logo {
+	display: flex;
+	position: fixed;
+	border: 1px solid white;
+	border-radius: 50%;
+	top: 4vh;
+  }
+  
+  .bonus-subtitle {
+	width: 100% !important;
+  }
+  
+  .bonus-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-top: 120px;
+  }
+  
+  .socials-container {
+	display: flex;
+	flex-direction: column;
+	margin-top: 80px;
+  }
+  
+  .bonus-socials {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+  }
+  
