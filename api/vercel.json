@@ -1,9 +1,0 @@
-{
-    "routes": [
-      {
-        "src": "/projects",
-        "dest": "/bonus"
-      }
-    ]
-  }
-  
