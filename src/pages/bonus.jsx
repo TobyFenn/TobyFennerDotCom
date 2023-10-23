@@ -15,7 +15,7 @@ const Bonus = () => {
   const linkData = [
     ['HTTP404', 'HTTP410', 'HTTP400', 'HTTP403', 'HTTP500'],
     ['DNSNXDOMAIN', 'DNSSERVFAIL', 'DNSREFUSED', 'DNSNOTIMP', 'DNSNXRRSET'],
-    ['Link3.1', 'Link3.2', 'Link3.3', 'Link3.4', 'Link3.5'],
+    ['Redirect', 'Link3.2', 'Link3.3', 'Link3.4', 'Link3.5'],
     ['Link4.1', 'Link4.2', 'Link4.3', 'Link4.4', 'Link4.5'],
   ];
 
@@ -33,19 +33,22 @@ const Bonus = () => {
       <div className="page-content">
         <NavBar active="bonus" />
         <div className="content-wrapper">
-
           <div className="link-container">
             {linkData.map((column, i) => (
               <div key={i} className="column">
                 {column.map((link, j) => (
-                  <a key={j} href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+                  <a 
+                    key={j} 
+                    href={link === "Redirect" ? "/redirect1" : "https://www.google.com"} 
+                    target={link === "Redirect" ? "_self" : "_blank"}
+                    rel="noopener noreferrer"
+                  >
                     {link}
                   </a>
                 ))}
               </div>
             ))}
           </div>
-
         </div>
       </div>
     </React.Fragment>
