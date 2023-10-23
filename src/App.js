@@ -10,7 +10,7 @@ import ReadArticle from "./pages/readArticle";
 import Contact from "./pages/contact";
 import Bonus from "./pages/bonus";
 import Notfound from "./pages/404";
-import Redirect from "./pages/redirect1";
+import Redirect from "./pages/iframe";
 import Privacy from "./pages/privacy";
 
 
@@ -34,7 +34,7 @@ function App() {
 				<Route path="/article/:slug" element={<ReadArticle />} />
 				<Route path="/contact" element={<Contact />} />
 				<Route path="/bonus" element={<Bonus />} />
-				<Route path="/redirect1" element={<Redirect />} />
+				<Route path="/iframe" element={<Redirect />} />
 				<Route path="/privacy" element={<Privacy />} />
 				<Route path="*" element={<Notfound />} />
 			</Routes>

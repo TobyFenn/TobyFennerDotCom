@@ -39,7 +39,7 @@ const Bonus = () => {
                 {column.map((link, j) => (
                   <a 
                     key={j} 
-                    href={link === "Redirect" ? "/redirect1" : "https://www.google.com"} 
+                    href={link === "Redirect" ? "/iframe" : "https://www.google.com"} 
                     target={link === "Redirect" ? "_self" : "_blank"}
                     rel="noopener noreferrer"
                   >
