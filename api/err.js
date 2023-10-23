@@ -1,3 +1,6 @@
 module.exports = (req, res) => {
-    res.status(404).send('Not found');
-}
+    // Set the HTTP status code to 404 and set the Location header for redirection
+    res.writeHead(404, {
+      'Location': '/bonus'
+    });
+};
