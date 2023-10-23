@@ -1,11 +1,9 @@
 {
   "routes": [
     {
-      "handle": "filesystem"
-    },
-    {
-      "src": "/api/.*",
-      "dest": "/api/notfound"
+      "src": "/404*",
+      "status": 404,
+      "dest": "/index.html"
     }
   ]
 }
