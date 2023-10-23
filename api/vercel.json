@@ -1,7 +1,7 @@
 {
     "routes": [
       {
-        "src": "/api/err",
+        "src": "/projects",
         "dest": "/bonus"
       }
     ]
