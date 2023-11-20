@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import NavBar from "../components/common/navBar";
 import "./styles/iframe.css";
 
-const Notfound = () => {
+const Notfoundsoft = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -10,7 +10,7 @@ const Notfound = () => {
   return (
     <React.Fragment>
       <div className="page-content">
-        <NavBar active="notfound" />
+        <NavBar active="notfoundsoft" />
         <div className="content-wrapper" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
             
             {/* Main content inside a red box */}
@@ -23,4 +23,4 @@ const Notfound = () => {
   );
 };
 
-export default Notfound;
+export default Notfoundsoft;
