@@ -1,11 +1,4 @@
 {
-  "routes": [
-    {
-      "src": "/404*",
-      "status": 404,
-      "dest": "/index.html"
-    }
-  ],
   "redirects": [
     { "source": "/test4", "destination": "/", "permanent": true }
   ]
