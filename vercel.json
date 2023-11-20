@@ -6,6 +6,8 @@
     { "source": "/test7", "destination": "/test6", "permanent": false },
     { "source": "/test6", "destination": "/", "permanent": false },
     { "source": "/test5", "destination": "/test4", "permanent": false },
-    { "source": "/test4", "destination": "/test5", "permanent": false }
+    { "source": "/test4", "destination": "/test5", "permanent": false },
+    { "source": "/test4", "destination": "/test5", "permanent": false },
+    { "source": "/test10", "destination": "/xxxxxx", "permanent": false }
   ]
 }
