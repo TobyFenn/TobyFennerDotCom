@@ -16,7 +16,7 @@ const Test2 = () => {
     return () => {
       clearTimeout(timer);
     };
-  }, []);
+  }, []); //
 
   return (
     <React.Fragment>
