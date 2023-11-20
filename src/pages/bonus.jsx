@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import NavBar from "../components/common/navBar";
 import INFO from "../data/user";
 import SEO from "../data/seo";
@@ -12,12 +13,12 @@ const Bonus = () => {
 
   const currentSEO = SEO.find((item) => item.page === "bonus");
 
-  const linkData = [
-    ['HTTP404', 'HTTP410', 'HTTP400', 'HTTP403', 'HTTP500'],
-    ['DNSNXDOMAIN', 'DNSSERVFAIL', 'DNSREFUSED', 'DNSNOTIMP', 'DNSNXRRSET'],
-    ['iframe', '404', 'Link3.3', 'Link3.4', 'Link3.5'],
-    ['Link4.1', 'Link4.2', 'Link4.3', 'Link4.4', 'Link4.5'],
-  ];
+  // Define the number of links and columns
+  const numLinks = 10;
+  const numColumns = 5;
+
+  // Calculate the number of rows needed
+  const numRows = Math.ceil(numLinks / numColumns);
 
   return (
     <React.Fragment>
@@ -34,25 +35,22 @@ const Bonus = () => {
         <NavBar active="bonus" />
         <div className="content-wrapper">
           <div className="link-container">
-            {linkData.map((column, i) => (
-              <div key={i} className="column">
-                {column.map((link, j) => (
-                  <a 
-                    key={j} 
-                    href={
-                          link === "iframe" ? "/iframe" :
-                          link === "404" ? "/404" :
-                          "https://www.google.com"
-                    }
-                    target={
-                          link === "iframe" || link === "404" ? "_self" :
-                          "_blank"
-                    }
-                    rel="noopener noreferrer"
-                  >
-                    {link}
-                  </a>
-                ))}
+            {Array.from({ length: numRows }, (_, rowIndex) => (
+              <div key={rowIndex} className="row">
+                {Array.from({ length: numColumns }, (_, colIndex) => {
+                  const linkIndex = rowIndex * numColumns + colIndex + 1;
+                  if (linkIndex <= numLinks) {
+                    return (
+                      <Link
+                        key={linkIndex}
+                        to={`/test${linkIndex}`}
+                      >
+                        -TEST {linkIndex}-
+                      </Link>
+                    );
+                  }
+                  return null;
+                })}
               </div>
             ))}
           </div>
