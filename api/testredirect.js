@@ -1,4 +1,4 @@
 // api/test4.js
 module.exports = (req, res) => {
-  res.redirect(302, '/');
+  res.status(200).send(`asdkjnakdjsn `);
 };
