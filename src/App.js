@@ -24,6 +24,9 @@ import Test8 from "./pages/test8";
 import Test9 from "./pages/test9";
 import Test10 from "./pages/test10";
 
+import Notfound from "./pages/notfound";
+
+
 import { TRACKING_ID } from "./data/tracking";
 import "./app.css";
 
@@ -57,6 +60,9 @@ function App() {
 				<Route path="/test8" element={<Test8 />} />
 				<Route path="/test9" element={<Test9 />} />
 				<Route path="/test10" element={<Test10 />} />
+
+				<Route path="/notfound" element={<Notfound />} />
+
 
 				<Route path="*" element={<Notfound />} />
 			</Routes>

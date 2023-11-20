@@ -53,6 +53,10 @@ const Bonus = () => {
                 })}
               </div>
             ))}
+
+            <div className="row">
+              <Link to="/notfound">Notfound</Link>
+            </div>
           </div>
         </div>
       </div>
